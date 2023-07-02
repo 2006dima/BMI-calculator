@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(70, 187, 119);
+}
+
+.s-1 {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.s-1-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 500px;
+  background-color: rgb(93, 160, 160);
+  border: 2px solid black;
+
+  margin-top: 100px;
+}
+.s-1-wrapper-1 {
+  display: flex;
+  align-items: center;
+}
+.input-wrapper-1 {
+  margin-right: 20px;
+}
+.s-1-wrapper-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+#age {
+  margin-bottom: 20px;
+}
+.label {
+  margin-top: 10px;
+}
+table {
+  width: 100%;
+  margin-top: 50px;
+}
+tr, td{
+  background: whitesmoke;
+}

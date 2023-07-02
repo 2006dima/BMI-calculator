@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI calculator</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-16x16.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="s-1">
+      <div class="s-1-div">
+        <h1>სხეულის მასის ინდექსის კალკულატორი</h1>
+        <div class="s-1-wrapper-1">
+          <div class="input-wrapper-1">
+            <label id="men" for="men">მამაკაცი</label>
+            <input type="checkbox" name="men" />
+          </div>
+          <div>
+            <label for="woman">ქალი</label>
+            <input type="checkbox" name="woman" />
+          </div>
+        </div>
+        <div class="s-1-wrapper-2">
+          <div>
+            <label for="age">ასაკი</label>
+          </div>
+          <input type="text" name="age" />
+          <div class="label">
+            <label for="height" name="height" id="height">სიმაღლე</label>
+          </div>
+          <input type="text" name="height" />
+          <div class="label">
+            <label for="weight">წონა</label>
+          </div>
+          <input type="text" name="weight" />
+          <div>
+            <button>შედეგი</button>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <h2>სხეულის მასის ინდექსის ცხრილი</h2>
+      <table>
+        <tr>
+          <th>16-ზე ნაკლები</th>
+          <th>მეტისმეტი სიგამხდრე</th>
+        </tr>
+        <tr>
+          <th>16-დან 18.5-მდე</th>
+          <th>სიგამხდრე</th>
+        </tr>
+        <tr>
+          <th>18.5 დან 25-მდე</th>
+          <th>ნორმალური წონა</th>
+        </tr>
+        <tr>
+          <th>25-30 მდე</th>
+          <th>ჭარბი წონა</th>
+        </tr>
+        <tr>
+          <th>30-ზე მეტი</th>
+          <th>სიმსუქმე</th>
+        </tr>
+      </table>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
