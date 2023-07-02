@@ -1,7 +1,7 @@
 // Checkbox for man and woman
 var manCheckBox = document.querySelector('input[name = "men"]'); 
 var womanCheckBox = document.querySelector('input[name = "woman"]');
-                            //change is event
+
 manCheckBox.addEventListener('change', function(){
     if  (manCheckBox.checked){
         womanCheckBox.disabled = true;
@@ -16,7 +16,10 @@ womanCheckBox.addEventListener('change', function(){
     } else {
         manCheckBox.disabled = false;
     }
+
 });
+
+
 //BMI calculator
 var calculateButton = document.querySelector('button');
 
@@ -27,10 +30,16 @@ calculateButton.addEventListener('click', function(){
     var height = parseInt(document.querySelector('input[name="height"]').value);
     var weight = parseInt(document.querySelector('input[name="weight"]').value);
 
+   
     if(isNaN(age) || isNaN(height) || isNaN(weight)) {
         alert('გთხოვთ შეიყვანოთ ვალიდური მნიშვნელობები, ასაკითვის, სიმაღლისთვის და წონისთვის.');
         return;
+        
     };
+    if(!isMale && !isFemale) {
+        alert('გთხოვთ მონიშნოთ სქესი: მამრობითი ან მდედრობითი');
+        return;
+    }
 
     var bmi = weight / ((height / 100) * (height / 100));
 
